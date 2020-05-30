@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Test File</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+  </head>
+  <body>
+    <table 
+    data-toggle="table"
+    id="Suzuka_GT"
+    data-url="https://cors-anywhere.herokuapp.com/https://raw.githubusercontent.com/Gear-NO-7/Files/master/Suzuka_GT.json"
+    data-total-field="Total">
+      <thead>
+        <tr>
+          <th data-field='Pos'>Pos</th>
+          <th data-field='Color' data-cell-style='cellStyle'></th>
+          <th data-field='Driver'>Driver</th>
+          <th data-field='Change'>Change</th>
+          <th data-field='Grid'>Grid</th>
+          <th data-field='Stint 1'>Stint 1</th>
+          <th data-field='Stint 2'>Stint 2</th>
+          <th data-field='Pit 1'>Pit 1</th>
+          <th data-field='Stint 3'>Stint 3</th>
+          <th data-field='Stint 4'>Stint 4</th>
+          <th data-field='Pit 2'>Pit 2</th>
+          <th data-field='Stint 5'>Stint 5</th>
+          <th data-field='Stint 6'>Stint 6</th>
+          <th data-field='Pit 3'>Pit 3</th>
+          <th data-field='Stint 7'>Stint 7</th>
+          <th data-field='Stint 8'>Stint 8</th>
+          <th data-field='Pit 4'>Pit 4</th>
+          <th data-field='Stint 9'>Stint 9</th>
+          <th data-field='Stint 10'>Stint 10</th>
+          <th data-field='Pit 5'>Pit 5</th>
+          <th data-field='Stint 11'>Stint 11</th>
+          <th data-field='Stint 12'>Stint 12</th>
+          <th data-field='Total'>Total</th>
+          <th data-field='Gap'>Gap</th>
+        </tr>
+      </thead>
+
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
+    <script type="text/javascript">
+      function cellStyle(value, row, index) {
+        return {
+          css: {"color": value.trim(),
+            "background-color": value.trim() }
+          //classes: value.trim() === '#7D3296' ? 'yes' : 'no'
+        };
+      }
+    </script>
+  </body>
+</html>
